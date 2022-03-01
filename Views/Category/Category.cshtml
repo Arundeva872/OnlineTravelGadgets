@@ -1,0 +1,27 @@
+﻿@model IEnumerable<OnlineTravelGadgetsShop.Models.Gadget>
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Styles/Category.css" rel="stylesheet" />
+<h1 class="Categorytitle">@ViewBag.CategoryTitle</h1>
+@{ foreach (var item in Model)
+    {
+    <div class="helclass">
+        <div class="image">
+            <img src="@Url.Content(item.image)" class="gadgetimg">
+        </div>
+        <div class="content">
+            <p class="productname">@item.Name</p>
+            <p class="amount">$ @item.Price</p>
+            <form action="@Url.Action("Buy","Product")">
+                <button type="submit" class="buy" value="@item.GadgetId" name="GadgetId">Buy Now</button>
+            </form>
+            <form action="@Url.Action("AddToCart","cart")">
+                <button type="submit" class="cart" value="@item.GadgetId" name="GadgetId">Add to Cart</button>
+            </form>            
+        </div>
+    </div>
+    }
+ }

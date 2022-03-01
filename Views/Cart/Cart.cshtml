@@ -1,0 +1,34 @@
+﻿@model IEnumerable<OnlineTravelGadgetsShop.Models.Cartitem>
+
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Styles/cart.css" rel="stylesheet" />
+@{
+    double totalprice = 0;
+    foreach (var item in Model)
+    {
+        totalprice = totalprice + item.Gadget.Price;
+        <div class="helclass">
+            <div class="image">
+                <img src="@Url.Content(item.Gadget.image)" class="gadgetimg">
+            </div>
+            <div class="content">
+                <p class="productname">@item.Gadget.Name</p>
+                <p class="amount">$ @item.Gadget.Price</p>
+                @*<form action="@Url.Action("Buy","Product")">
+                        <button type="submit" class="buy" value="@item.Gadget.GadgetId" name="GadgetId">Buy Now</button>
+                    </form>*@
+                <form action="@Url.Action("RemoveCart","cart")">
+                    <button type="submit" class="Remove" value="@item.Gadget.GadgetId" name="GadgetId">Remove from Cart</button>
+                </form>
+            </div>
+        </div>
+    }
+//<form action="@Url.Action("Homepage","home")">
+    <div class="tp-class">
+        <p class="tp">Total Price : $ @totalprice <div class="tp-bb"><button class="tp-butt" type="submit" name="GadgetId">Buy All</button></div></p>
+    </div>
+//</form>
+        }

@@ -1,0 +1,27 @@
+﻿
+.purchase-content {
+    margin: 1vw 30vw;
+    border: 1px green solid;
+    border-radius: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+}
+
+.success-msg {
+    color: green;
+    text-align: center;
+    font-size: larger;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin: 100px;
+    font-size: 50px;
+}

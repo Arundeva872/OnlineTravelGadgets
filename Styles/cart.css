@@ -1,0 +1,117 @@
+﻿.Categorytitle {
+    margin: 30px;
+    margin-top: 90px;
+    color: black;
+    font-family: fantasy;
+    text-decoration: underline;
+    padding-left: 600px;
+}
+
+.helclass {
+    margin: 60px;
+    padding: 40px;
+    height: 200px
+}
+
+.gadgetimg {
+    height: 200px;
+    width: 200px;
+}
+
+.image {
+    float: left;
+    display: inline;
+    margin: 0 40px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content {
+    float: left;
+    display: inline;
+    margin: 0 40px;
+    padding: 20px;
+}
+
+.productname {
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.amount {
+    font-family: cursive;
+    font-style: italic;
+}
+
+.buy {
+    width: 100px;
+    height: 30px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: 700px;
+    border: 0px;
+    border-radius: 15px;
+}
+.Remove {
+    width: 150px;
+    height: 30px;
+    background-color:darkred;
+    color: white;
+    font-weight: 700px;
+    border: 0px;
+    border-radius: 15px;
+    margin-top:10px;
+}
+
+.cart {
+    width: 100px;
+    height: 30px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 700px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.cart {
+    margin: 10px;
+    margin-left: -0px;
+}
+
+.cart-css {
+    margin-right: 85%;
+}
+.tp-class {
+    margin-top:-7%;
+    position:center;
+    padding: 50px;
+    font-size: 50px;
+    right: -100px;
+    left: 100px;
+    top:-15px;
+    bottom: 100px;
+    font-weight: bold;
+}
+.tp {
+    padding-left:250px;
+    padding-top:-200px;
+}
+
+.tp-butt {
+    width: 100px;
+    height: 40px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 15px;
+    display: block;
+}
+.tp-bb {
+    position: relative;
+    transition: .5s ease;
+    top: -96px;
+    left: 700px;
+    right: -420px;
+    bottom: -200px;
+    font-weight: bold;
+}

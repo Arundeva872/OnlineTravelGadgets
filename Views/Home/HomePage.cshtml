@@ -1,0 +1,23 @@
+﻿@model OnlineTravelGadgetsShop.Models.Customer
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Styles/Homepage.css" rel="stylesheet" />
+<div class="bimg">
+    <div class="homec1">
+        <img src="~/images/homeimg1.png">
+    </div>
+    <div class="box">
+        <h2>CATEGORIES</h2>
+
+        <ul>
+            <li><a href="@Url.Action("Category","Category",new {categoryType="Helmet" })" class="bbb"><span>1</span>Helmets</a></li>
+            <li><a href="@Url.Action("Category","Category",new {categoryType="Jackets" })" class="bbb"><span>2</span>Jackets</a></li>
+            <li><a href="@Url.Action("Category","Category",new {categoryType="Gloves" })" class="bbb"><span>3</span>Gloves</a></li>
+            <li><a href="@Url.Action("Category","Category",new {categoryType="Saddle bags" })" class="bbb"><span>4</span>Saddle bags</a></li>
+            <li><a href="@Url.Action("Category","Category",new {categoryType="Boots" })" class="bbb"><span>5</span>Boots</a></li>
+        </ul>
+
+    </div>
+</div>

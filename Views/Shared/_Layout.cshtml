@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Styles/Navbar.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>TRAVEL <span>GADGETS</span></h1>
+        <nav>
+            <div class="bb">
+                <ul>
+                    <li><a href=@Url.Action("Homepage","Home")>Home</a></li>
+                    <li><a href=@Url.Action("cart","Cart")>Cart</a></li>
+                    <li><a href="#">@TempData["Username"]</a></li>
+                    <li><a href=@Url.Action("Login","Login")>Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr/>
+    </div>
+    </body>
+</html>

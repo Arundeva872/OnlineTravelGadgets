@@ -1,0 +1,11 @@
+﻿@model System.String
+@{
+    ViewBag.Title = "purchaseconfirm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Styles/Pruchaseconfirm.css" rel="stylesheet"/>
+<h2>Purchase Confirmation</h2>
+<div class="purchase-content">
+    <p class="product-name">@Model</p>
+    <p class="success-msg">This product has been purchased succesfully!!!</p>
+</div>

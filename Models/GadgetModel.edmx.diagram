@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7310a94583b043329ff28be6b34467e3" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineTravelGadgetsModel.Cartitem" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineTravelGadgetsModel.Cart" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineTravelGadgetsModel.Customer" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineTravelGadgetsModel.Gadget" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineTravelGadgetsModel.OrderItem" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineTravelGadgetsModel.Order" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="OnlineTravelGadgetsModel.FK_Cartitems_Carts" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineTravelGadgetsModel.FK_Cartitems_Gadgets" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineTravelGadgetsModel.FK_Carts_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineTravelGadgetsModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineTravelGadgetsModel.FK_OrderItems_Gadgets" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineTravelGadgetsModel.FK_OrderItems_Orders" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

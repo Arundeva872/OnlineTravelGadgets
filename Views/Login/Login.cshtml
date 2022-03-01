@@ -1,0 +1,22 @@
+﻿
+@model OnlineTravelGadgetsShop.Models.Customer 
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+    //Change this  part after adding custom layout page
+}
+<link href="~/Styles/Login.css" rel="stylesheet"/>
+<div class="loginbox">
+    <img src="~/images/img1.png" class="loginimg">
+    <h1>Login Here</h1>
+    <form method="post" action="@Url.Action("Login","Login")">
+        <p>Username</p>
+        <input type="text" name="CustomerUserId" value="@Model.CustomerName" placeholder="Enter username">
+        <p>Password</p>
+        <input type="password" name="CustomerPassword" placeholder="Enter password">
+        <input type="submit"  value="Login">
+        <br>
+        <a href="@Url.Action("Signup","Signup")">New User ? Create account</a>
+    </form>
+</div>
+
